@@ -24,6 +24,9 @@ header div{
     height: 40px;
     text-align: center;
     border: rgb(18, 37, 24);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .menu li{
     display: inline-block;
@@ -59,8 +62,15 @@ h2{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .logo{
-    border-radius: 80%;
+    border-radius: 20%;
     width: 100px;
+    padding: 0,7rem;
+    text-align: center;
+}
+.pelota{
+    background-color: green;
+    width: 70px;
+    padding: 0,7rem;
 }
 .wsp{
     border-radius: 50%;
@@ -120,6 +130,13 @@ footer h3{
     height: 300px;
     margin: 10px;
     display: inline-block;
+    opacity: .4;
+}
+.urbaLogo:hover{
+    border:solid red 4px;
+}
+.urbaLogo:hover{
+    opacity: 1;
 }
 .urbaTitulo{
     text-align: center;
