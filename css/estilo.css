@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(170, 218, 170);
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgb(18, 37, 24);
+}
+header div{
+    text-align: left;
+}
+.menu{
+    color: white;
+    background-color: rgb(40, 61, 47);
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 25px auto;
+    height: 40px;
+    text-align: center;
+    border: rgb(18, 37, 24);
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a {
+    padding:20px;
+    margin: 10px;
+    text-decoration: none;
+    color:rgb(207, 231, 207);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.menu li a:hover{
+    color: rgb(18, 37, 24);
+    background-color: rgb(170, 218, 170);
+    border-radius: 50%;
+}
+section div{
+    text-align: center;
+}
+h1{
+    color:rgb(223, 240, 230);
+    text-align: center;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+}
+h2{
+    color:white;
+    text-align: center;
+    padding: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    border-radius: 80%;
+    width: 100px;
+}
+.wsp{
+    border-radius: 50%;
+    width: 25px;
+}
+.tw{
+    border-radius: 50%;
+    width: 25px;
+}
+.fb{
+    border-radius: 50%;
+    width: 25px;
+}
+.ig{
+    border-radius: 50%;
+    width: 25px;
+}
+.yt{
+    border-radius: 50%;
+    width: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.subtColor{
+    color: black;
+    width: 250px;
+    text-align: center;
+    overflow: auto;
+}
+p{
+    padding:20px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: justify;
+} 
+footer h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.t1{
+    text-align: center;
+    color: rgb(35, 3, 3);
+}
+.p2{
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.urba{
+    border: solid rgb(59, 14, 14) 3px;
+    height: 320px;
+    background-color: rgb(0, 19, 112);
+}
+.urbaLogo{
+    border: solid rgb(255, 255, 255) 2px;
+    height: 300px;
+    margin: 10px;
+    display: inline-block;
+}
+.urbaTitulo{
+    text-align: center;
+    color: rgb(18, 37, 24);
+}
+.relleno{
+    background-color: rgb(184, 209, 187);
+    color: rgb(2, 16, 5);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.relleno2{
+    background-color: rgb(2, 16, 5);
+    color:rgb(184, 209, 187);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.iframe{
+    text-align: center;
+}
