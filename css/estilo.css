@@ -72,6 +72,39 @@ h2{
     width: 70px;
     padding: 0,7rem;
 }
+.fotosUrba{
+    border: solid black 3px;
+    width: 500px;
+    padding: 0,7rem;
+    display: flex;
+    flex-direction: row;
+    display: inline-block;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.subtColor{
+    color: black;
+    width: 250px;
+    text-align: center;
+    overflow: auto;
+}
+p{
+    padding:20px;
+    line-height: 2;
+    margin: 0 auto;
+    text-align: justify;
+} 
+.historiaUrba{
+    text-align: center;
+    color: rgb(18, 37, 24);
+    font-style: italic;
+}
+footer h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
 .wsp{
     border-radius: 50%;
     width: 25px;
@@ -91,25 +124,6 @@ h2{
 .yt{
     border-radius: 50%;
     width: 25px;
-}
-ul{
-    list-style-type: none;
-}
-.subtColor{
-    color: black;
-    width: 250px;
-    text-align: center;
-    overflow: auto;
-}
-p{
-    padding:20px;
-    line-height: 2;
-    margin: 0 auto;
-    text-align: justify;
-} 
-footer h3{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 .t1{
     text-align: center;
@@ -141,6 +155,33 @@ footer h3{
 .urbaTitulo{
     text-align: center;
     color: rgb(18, 37, 24);
+}
+.cajaClubes{
+    border: solid rgb(59, 14, 14) 3px;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.clubLogo{
+    background-color: black;
+    border: solid rgb(255, 255, 255) 2px;
+    height: 70px;
+    margin: 10px;
+    display: inline-block;
+    opacity: .4;
+}
+.clubLogo:hover{
+    border:solid red 4px;
+    background-color: white;
+}
+.clubLogo:hover{
+    opacity: 1;
+}
+.textoClubes{
+    list-style-type: none;
 }
 .relleno{
     background-color: rgb(184, 209, 187);
