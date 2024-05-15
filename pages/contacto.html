@@ -36,26 +36,31 @@
     <hr>
         <main class ="main">
         <!--Contacto--> 
-        <div class="container">
+        <div class="formulario">
             <h2> Para contactarte con nosotros, por favor ingresá tus datos acá:</h2>
             <form>
                 <div class="mb-3">
-                    <label for="nombre" class="form-label">Nombre</label>
+                    <label for="nombre" class="form-label">*Nombre</label>
                     <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre"> 
                 </div>
                 <div class="mb-3">
-                    <label for="apellido" class="form-label">Apellido</label>
+                    <label for="apellido" class="form-label">*Apellido</label>
                     <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido"> 
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="telefono" placeholder="Ingresá tu número"> 
                 </div>
                 <div class="mb-3">
                     <label for="mail" class="form-label">Email</label>
                     <input type="text" class="form-control" id="mail" placeholder="@mail"> 
                 </div>
                 <div class="mb-3">
-                    <label for="comentario" >Escribe un comentario</label>
+                    <label for="comentario" >*Escribinos tu comentario</label>
                     <textarea name="comentario" id="comentario" rows="3" cols="50"></textarea>
                 </div>
-                <button type="submit" class="boton">Enviar</button>
+                <p class="camposObligatorios">(*) campos obligatorios</p>
+                <button type="submit" class="btn btn-success">Enviar</button>
             </form>
         </div>
     </main>

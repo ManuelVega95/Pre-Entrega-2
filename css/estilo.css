@@ -129,51 +129,7 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px;
 }
-footer h3{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.wsp{
-    border-radius: 50%;
-    width: 25px;
-    opacity: .4;
-}
-.wsp:hover{
-    opacity: 1;
-}
-.tw{
-    border-radius: 50%;
-    width: 25px;
-    opacity: .4;
-}
-.tw:hover{
-    opacity: 1;
-}
-.fb{
-    border-radius: 50%;
-    width: 25px;
-    opacity: .4;
-}
-.fb:hover{
-    opacity: 1;
-}
-.ig{
 
-    border-radius: 50%;
-    width: 25px;
-    opacity: .4;
-}
-.ig:hover{
-    opacity: 1;
-}
-.yt{
-    border-radius: 50%;
-    width: 25px;
-    opacity: .4;
-}
-.yt:hover{
-    opacity: 1;
-}
 .t1{
     text-align: center;
     color: rgb(35, 3, 3);
@@ -335,6 +291,52 @@ footer h3{
     text-align: center;
     justify-content: center;
 }
+/* footer general */
+footer h3{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.wsp{
+    border-radius: 50%;
+    width: 25px;
+    opacity: .4;
+}
+.wsp:hover{
+    opacity: 1;
+}
+.tw{
+    border-radius: 50%;
+    width: 25px;
+    opacity: .4;
+}
+.tw:hover{
+    opacity: 1;
+}
+.fb{
+    border-radius: 50%;
+    width: 25px;
+    opacity: .4;
+}
+.fb:hover{
+    opacity: 1;
+}
+.ig{
+
+    border-radius: 50%;
+    width: 25px;
+    opacity: .4;
+}
+.ig:hover{
+    opacity: 1;
+}
+.yt{
+    border-radius: 50%;
+    width: 25px;
+    opacity: .4;
+}
+.yt:hover{
+    opacity: 1;
+}
 .footer{
     background-color: rgb(170, 218, 170);
     text-align: center;
@@ -344,8 +346,7 @@ footer h3{
     text-align: center;
 }
 
-/* css Noticias
-*/
+/* css Noticias */
 .card{
     width: 300px;
     padding: 20px;
@@ -373,10 +374,26 @@ footer h3{
     padding: 15px;
 }
 
-/* css Contacto */
-.container{
-    color: rgb(9, 9, 63);
+/* css Contacto + formulario */
+.formulario{
+    color: rgb(18, 37, 24);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+.mb-3{
+    padding: 10px;
+    margin: 0 auto;
+}
+.boton{
+    padding: 10px;
+    border-radius: 90px;
+    border: solid black 3px;
+}
+.camposObligatorios{
+    font-style: italic;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif
 }
 @media screen and (max-width:720px) {
     .cajaClubes{
