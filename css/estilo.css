@@ -15,8 +15,7 @@ header div{
     text-align: left;
 }
 .menu{
-    color: white;
-    background-color: rgb(40, 61, 47);
+    color: rgb(170, 218, 170);
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
@@ -26,7 +25,7 @@ header div{
     border: rgb(18, 37, 24);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 .menu li{
     display: inline-block;
@@ -41,9 +40,8 @@ header div{
     text-align: center;
 }
 .menu li a:hover{
-    color: rgb(18, 37, 24);
-    background-color: rgb(170, 218, 170);
-    border-radius: 50%;
+    color: rgb(174, 144, 144);
+    font-style:italic;
 }
 section div{
     text-align: center;
@@ -74,11 +72,11 @@ h2{
 }
 .fotosUrba{
     border: solid black 3px;
-    width: 500px;
+    width: 400px;
+    height: 270px;
     padding: 0,7rem;
     display: flex;
     flex-direction: row;
-    display: inline-block;
     text-align: center;
 }
 ul{
@@ -100,6 +98,14 @@ p{
     text-align: center;
     color: rgb(18, 37, 24);
     font-style: italic;
+    padding: 10px;
+}
+.actualidadUrba{
+    text-align: center;
+    color: rgb(170, 218, 170);
+    background-color: rgb(18, 37, 24);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
 }
 footer h3{
     text-align: center;
@@ -108,22 +114,43 @@ footer h3{
 .wsp{
     border-radius: 50%;
     width: 25px;
+    opacity: .4;
+}
+.wsp:hover{
+    opacity: 1;
 }
 .tw{
     border-radius: 50%;
     width: 25px;
+    opacity: .4;
+}
+.tw:hover{
+    opacity: 1;
 }
 .fb{
     border-radius: 50%;
     width: 25px;
+    opacity: .4;
+}
+.fb:hover{
+    opacity: 1;
 }
 .ig{
+
     border-radius: 50%;
     width: 25px;
+    opacity: .4;
+}
+.ig:hover{
+    opacity: 1;
 }
 .yt{
     border-radius: 50%;
     width: 25px;
+    opacity: .4;
+}
+.yt:hover{
+    opacity: 1;
 }
 .t1{
     text-align: center;
@@ -164,7 +191,35 @@ footer h3{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 90%;
+    height: 200px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 20px ;
+    row-gap: 5px;
+    grid-template-areas: 
+    "Alumni AtleticoDelRosario Belgrano BuenosAires Champagnat CUBA"
+    "CASI Hindu Newman Regatas SIC SanLuis";
+    align-items: center;
+    justify-items: auto;
+    justify-content: center;
 }
+
+/* Caja sin grid
+.cajaClubes{
+    border: solid rgb(59, 14, 14) 3px;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+*/
 .clubLogo{
     background-color: black;
     border: solid rgb(255, 255, 255) 2px;
@@ -197,4 +252,104 @@ footer h3{
 }
 .iframe{
     text-align: center;
+}
+
+<!--Responsive-->
+.contenedor
+{
+    background-color: rgb(170, 218, 170);
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "footer footer";
+}
+.header{
+    color: rgb(170, 218, 170);
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 25px auto;
+    height: 40px;
+    text-align: center;
+    border: rgb(18, 37, 24);
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.header li{
+    display: inline-block;
+    text-align: center;
+}
+.header li a {
+    padding:20px;
+    margin: 10px;
+    text-decoration: none;
+    color:rgb(207, 231, 207);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.header li a:hover{
+    color: rgb(174, 144, 144);
+    font-style:italic;
+}
+
+.main body{
+    color: rgb(18, 37, 24);
+    background-color: rgb(170, 218, 170);
+    font-family: 'Times New Roman', Times, serif;
+}
+.main{
+    background-color: rgb(170, 218, 170);
+}
+.main h2{
+    text-align: center;
+    color: rgb(18, 37, 24);
+}
+.aside .fotosUrba{
+    border: solid black 3px;
+    width: 300px;
+    padding: 0,7rem;
+    display: inline-block;
+    flex-direction: row;
+    text-align: center;
+}
+.footer{
+    background-color: rgb(170, 218, 170);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.redesSociales{
+    text-align: center;
+}
+
+@media screen and (max-width:720px) {
+    .cajaClubes{
+        width: 100vw;
+        height: 300px;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+         "Alumni AtleticoDelRosario Belgrano"
+         "BuenosAires Champagnat CUBA"
+         "CASI Hindu Newman"
+         "Regatas SIC SanLuis";
+        }
+}
+@media screen and (max-width:420px) {
+    .contenedor{
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+         "header"
+         "main"
+         "aside"
+         "footer";
+        }
 }
