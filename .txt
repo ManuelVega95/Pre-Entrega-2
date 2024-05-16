@@ -1,4 +1,5 @@
 CODIGOS SIN USAR
+/*
 
 -- Caja Clubes sin grid
 .cajaClubes{
@@ -38,3 +39,17 @@ CODIGOS SIN USAR
          "footer";
         }
 }
+
+
+@media screen and (max-width:550px) {
+    .contenedorIndex{
+        width: 200vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto ;
+        grid-template-areas: 
+         "header"
+         "main"
+         "footer";
+        }
+}
+*/
