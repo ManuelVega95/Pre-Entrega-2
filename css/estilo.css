@@ -397,10 +397,24 @@ footer h3{
         }
 }
 
+@media screen and (max-width:570px) {
+    .cajaClubes{
+        width: 80vw;
+        height: 440px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+         "Alumni AtleticoDelRosario Belgrano" 
+         "BuenosAires Champagnat CUBA"
+         "CASI Hindu Newman"
+         "Regatas SIC SanLuis"
+        }
+}
+
 @media screen and (max-width:460px) {
     .cajaClubes{
         width: 100vw;
-        height: 470px;
+        height: 700px;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-areas: 
@@ -408,7 +422,7 @@ footer h3{
          "Belgrano BuenosAires"
          "Champagnat CUBA"
          "CASI Hindu "
-         "NewmanRegatas"
+         "Newman Regatas"
          "SIC SanLuis";
         }
 }
