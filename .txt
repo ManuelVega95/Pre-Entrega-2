@@ -1,0 +1,40 @@
+CODIGOS SIN USAR
+
+-- Caja Clubes sin grid
+.cajaClubes{
+    border: solid rgb(59, 14, 14) 3px;
+    background-color: black;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    .contenedor
+{
+    background-color: rgb(170, 218, 170);
+    font-family: 'Times New Roman', Times, serif;
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "footer footer";
+}
+
+@media screen and (max-width:420px) {
+    .contenedor{
+        width: 100vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+         "header"
+         "main"
+         "aside"
+         "footer";
+        }
+}

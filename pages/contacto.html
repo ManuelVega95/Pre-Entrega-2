@@ -19,8 +19,35 @@
         <h2>
             Programa radial
         </h2>
+        <nav class="navbar navbar-expand-lg bgVerde ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class = "logo" src="../fotos/Pelota Rugby Urba.webp" alt="logo"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Menú
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/nosotros.html">Nosotros</a></li>
+                      <li><a class="dropdown-item" href="../pages/noticias.html">Noticias</a></li>
+                      <li><a class="dropdown-item" href="../pages/urba.html">URBA</a></li>
+                      <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!--Barra de navegación normal. El otro es para probar el menú "hamburguesa" y practicar distintas cosas
         <nav>
-	<div class="contenedor">
+	<div>
 		<header class="header">
 			<nav>
 				<ul>
@@ -33,6 +60,7 @@
 				</ul>
 			</nav>
 		</header>
+        -->
     <hr>
         <main class ="main">
         <!--Contacto--> 
@@ -41,23 +69,23 @@
             <form>
                 <div class="mb-3">
                     <label for="nombre" class="form-label">*Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre"> 
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresá tu nombre"  required><br><br> 
                 </div>
                 <div class="mb-3">
                     <label for="apellido" class="form-label">*Apellido</label>
-                    <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido"> 
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresá tu apellido" required><br><br>
                 </div>
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Teléfono</label>
-                    <input type="text" class="form-control" id="telefono" placeholder="Ingresá tu número"> 
+                    <input type="number" class="form-control" id="telefono" placeholder="Ingresá tu número"> 
                 </div>
                 <div class="mb-3">
                     <label for="mail" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="mail" placeholder="@mail"> 
+                    <input type="email" class="form-control" id="mail" placeholder="@mail"> 
                 </div>
                 <div class="mb-3">
                     <label for="comentario" >*Escribinos tu comentario</label>
-                    <textarea name="comentario" id="comentario" rows="3" cols="50"></textarea>
+                    <textarea name="comentario" id="comentario" rows="3" cols="50" required></textarea> <br><br>
                 </div>
                 <p class="camposObligatorios">(*) campos obligatorios</p>
                 <button type="submit" class="btn btn-success">Enviar</button>
