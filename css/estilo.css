@@ -396,3 +396,19 @@ footer h3{
          "Regatas SIC SanLuis";
         }
 }
+
+@media screen and (max-width:460px) {
+    .cajaClubes{
+        width: 100vw;
+        height: 470px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: 
+         "Alumni AtleticoDelRosario" 
+         "Belgrano BuenosAires"
+         "Champagnat CUBA"
+         "CASI Hindu "
+         "NewmanRegatas"
+         "SIC SanLuis";
+        }
+}
