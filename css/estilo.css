@@ -383,9 +383,9 @@ footer h3{
     background-color: rgb(18, 37, 24);
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:768px) {
     .cajaClubes{
-        width: 100vw;
+        width: 70vw;
         height: 300px;
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto auto auto;
@@ -397,7 +397,7 @@ footer h3{
         }
 }
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:550px) {
     .contenedorIndex{
         width: 200vw;
         grid-template-columns: 1fr 1fr 1fr 1fr;
