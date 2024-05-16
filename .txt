@@ -1,6 +1,9 @@
-CODIGOS SIN USAR
+
 /*
 
+El diseño final no es el que voy a usar sí o sí. Estoy tratando de ir viendo cómo poder dejarlo de la manera más óptima, pero para este tp preferí priorizar el uso de distintos elementos vistos en las clases. Por eso tengo una página con formulario bootstrap, otro con grid bootstrap, una en donde utilizo el sistema grid para una caja con los clubes y con fotos, y  el index que traté de que quede responsive, aunque faltan detalles. También traté de comentar lo máximo posible para que no sea tan molesto el leer el código.
+
+CODIGOS SIN USAR -- lo dejo comentado por si se mezcla en el código principal
 -- Caja Clubes sin grid
 .cajaClubes{
     border: solid rgb(59, 14, 14) 3px;

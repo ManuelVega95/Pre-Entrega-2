@@ -1,19 +1,25 @@
+/* reiniciar el formato antes de arrancar*/
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
+/* body */
 body{
     background-color: rgb(170, 218, 170);
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* header */
 header{
     background-color: rgb(18, 37, 24);
 }
 header div{
     text-align: left;
 }
+
+/* barra de navegación cuando no uso bootstrap + el uso de hover para que se modifique el formato al pasar el cursor por encima */ 
 .menu{
     color: rgb(170, 218, 170);
     list-style-type: none;
@@ -46,6 +52,8 @@ header div{
 section div{
     text-align: center;
 }
+
+/* Títulos */
 h1{
     color:rgb(223, 240, 230);
     text-align: center;
@@ -59,24 +67,24 @@ h2{
     padding: 10px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-.noticias
-{
-    color:black;
-    text-align: center;
-    padding: 10px;
-    background-color: rgb(170, 218, 170);
-}
+
+
+/* logo principal de la página */
 .logo{
     border-radius: 20%;
     width: 100px;
     padding: 0,7rem;
     text-align: center;
 }
+
+/* no encontré una buena pelota de rugby para poner en la barra de navegación, lo dejo en el css por si llego a encontrarlo más adelante */
 .pelota{
-    background-color: green;
+    background-color: rgb(18, 37, 24);
     width: 70px;
     padding: 0,7rem;
 }
+
+/* fotos */
 .fotosIndex{
     border: solid black(59, 14, 14) 3px;
     height: 70px;
@@ -101,9 +109,13 @@ h2{
     flex-direction: row;
     text-align: center;
 }
+
+/* le saqué el diseño predeterminado a las listas del menú*/
 ul{
     list-style-type: none;
 }
+
+/* distintos tipos de letra para los textos -- había usado el .subtColor pero lo borré, igual lo dejo en el css por si vuelvo a necesitarlo*/
 .subtColor{
     color: black;
     width: 250px;
@@ -139,6 +151,15 @@ p{
     color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.noticias
+{
+    color:black;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(170, 218, 170);
+}
+
+/* logo y título de la URBA en la página Index*/
 .urba{
     border: solid rgb(59, 14, 14) 3px;
     height: 320px;
@@ -157,10 +178,14 @@ p{
 .urbaLogo:hover{
     opacity: 1;
 }
+
+/* clase del título de la URBA y caja en la página Index*/
 .urbaTitulo{
     text-align: center;
     color: rgb(18, 37, 24);
 }
+
+/* grid para la caja de los Clubes de la página URBA*/
 .cajaClubes{
     border: solid rgb(59, 14, 14) 3px;
     background-color: black;
@@ -199,15 +224,21 @@ p{
 .clubLogo:hover{
     opacity: 1;
 }
+
+/* la idea era usarlo para escribir los nombres de cada club abajo del escudo, voy a intentar de que quede bien para la próxima entrega
 .textoClubes{
     list-style-type: none;
 }
+*/
+
 .noticias{
     background-color: rgb(184, 209, 187);
     color: rgb(2, 16, 5);
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* iframe de la página index */
 .iframe{
     text-align: center;
     display: flex;
@@ -215,7 +246,6 @@ p{
 }
 
 /*Responsive*/
-
 .header{
     color: rgb(170, 218, 170);
     list-style-type: none;
@@ -258,7 +288,12 @@ p{
     text-align: center;
     color: rgb(18, 37, 24);
 }
-.aside .fotosUrba{
+
+/* fotos de los campeones de los últimos torneos.*/
+.campeonesUrba{
+    text-align: center;
+}
+.campeonesUrba .fotosUrba{
     border: solid black 3px;
     width: 300px;
     padding: 0,7rem;
@@ -267,7 +302,8 @@ p{
     text-align: center;
     justify-content: center;
 }
-/* footer general */
+
+/* footer general --texto, logos (wsp, youtube, twitter, facebook, instagram) y el responsive para cada página + hover en logos */
 footer h3{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -322,7 +358,7 @@ footer h3{
     text-align: center;
 }
 
-/* css Noticias */
+/* css de las cards para la página Noticias */
 .card{
     width: 300px;
     padding: 20px;
@@ -351,11 +387,9 @@ footer h3{
 }
 
 /* css Contacto + formulario */
-
 .bgVerde{
     background-color: rgb(125, 171, 148);
-}
-
+} 
 .formulario{
     color: rgb(18, 37, 24);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -374,15 +408,15 @@ footer h3{
 .camposObligatorios{
     font-style: italic;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Nosotros - Bootstrap Grid */
-
 .container{
     background-color: rgb(18, 37, 24);
 }
 
+/* Responsive para la caja con Clubes, de la página URBA. Cuando es grande la pantalla se ve normal con 6 columnas y 2 filas; achicando un poco se ven 4 columnas y 3 filas, después pasa a 3 y 4, y por último cuando es muy chica la pantalla, se ven 2 columnas de 6 filas. */
 @media screen and (max-width:768px) {
     .cajaClubes{
         width: 100vw;
@@ -396,7 +430,6 @@ footer h3{
          "Regatas SIC SanLuis";
         }
 }
-
 @media screen and (max-width:570px) {
     .cajaClubes{
         width: 80vw;
@@ -410,7 +443,6 @@ footer h3{
          "Regatas SIC SanLuis"
         }
 }
-
 @media screen and (max-width:460px) {
     .cajaClubes{
         width: 100vw;
@@ -421,7 +453,7 @@ footer h3{
          "Alumni AtleticoDelRosario" 
          "Belgrano BuenosAires"
          "Champagnat CUBA"
-         "CASI Hindu "
+         "CASI Hindu"
          "Newman Regatas"
          "SIC SanLuis";
         }
